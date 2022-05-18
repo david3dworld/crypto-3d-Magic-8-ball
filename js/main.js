@@ -5,7 +5,7 @@ import { TWEEN } from "./threeR136/examples/jsm/libs/tween.module.min.js";
 
 let scene = new THREE.Scene();
 let camera = new THREE.PerspectiveCamera(60, innerWidth / innerHeight, 0.1, 2000);
-camera.position.set(0, 1, 0.375).setLength(15);
+camera.position.set(0, 2, 0.375).setLength(15);
 let renderer = new THREE.WebGLRenderer({
     antialias: true
 });
