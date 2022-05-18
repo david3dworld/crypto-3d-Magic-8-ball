@@ -168,6 +168,7 @@ let im = new THREE.MeshBasicMaterial({
       	vInstId = instId;
       `
         );
+        //console.log("shader")
         //console.log(shader.vertexShader);
         shader.fragmentShader = `
     	#define ss(a, b, c) smoothstep(a, b, c)
@@ -316,9 +317,6 @@ function setNewText() {
     globalUniforms.text.value = phraseTextures[THREE.MathUtils.randInt(0, 19)];
 }
 
-// </INTERACTION>
-
-
 let clock = new THREE.Clock();
 
 renderer.setAnimationLoop(() => {
@@ -411,7 +409,6 @@ function createTextures() {
         let size = 30;
         let sizeRatio = 1.0;
         ctx.font = `bold ${size}px 'Courier New'`;
-
 
         let phraseChunks = phrase.split("|");
         let pcLength = phraseChunks.length;
