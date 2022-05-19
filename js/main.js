@@ -268,7 +268,6 @@ let bm = new THREE.ShaderMaterial({
 let bo = new THREE.Mesh(bg, bm);
 scene.add(bo);
 // </BACKGROUND>
-
 // <INTERACTION>
 let isRunning = true;
 function animation(param, valStart, valEnd, duration = 1000, delay = 0) {
@@ -415,7 +414,6 @@ function createTextures() {
         phraseChunks.forEach((pc, idx) => {
             ctx.fillText(pc.toUpperCase(), 127, 127 - startPoint + (idx * size * sizeRatio));
         })
-
         canvases.push(new THREE.CanvasTexture(c));
     })
     return canvases;
