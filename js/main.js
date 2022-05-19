@@ -167,9 +167,7 @@ let im = new THREE.MeshBasicMaterial({
             `#include <begin_vertex>
       	vInstId = instId;
       `
-        );
-        //console.log("shader")
-        //console.log(shader.vertexShader);
+        );        
         shader.fragmentShader = `
     	#define ss(a, b, c) smoothstep(a, b, c)
       uniform float baseVisibility;
